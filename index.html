@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="corporate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netix Liu - 專業商務服務</title>
+    <meta name="description" content="Netix Liu提供專業的商務諮詢服務，包含數位轉型/技術整合顧問、客製化系統開發、SAAS系統代理與整合、網站設計建置等服務項目。">
+    
+    <!-- DaisyUI & Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-base-100">
+    <!-- Navigation -->
+    <nav class="navbar bg-base-100 shadow-lg fixed top-0 z-50">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fas fa-bars text-xl"></i>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="#home" class="nav-link">首頁</a></li>
+                    <li><a href="#about" class="nav-link">關於我</a></li>
+                    <li><a href="#services" class="nav-link">服務項目</a></li>
+                    <li><a href="#contact" class="nav-link">取得連繫</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl font-bold text-primary">Netix Liu</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#home" class="nav-link">首頁</a></li>
+                <li><a href="#about" class="nav-link">關於我</a></li>
+                <li><a href="#services" class="nav-link">服務項目</a></li>
+                <li><a href="#contact" class="nav-link">取得連繫</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="#contact" class="btn btn-primary">立即諮詢</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <div class="avatar mb-8 animate-gentle-float">
+                    <div class="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                        <img src="images/DSC_9381.jpg" alt="Netix Liu" />
+                    </div>
+                </div>
+                <h1 class="text-5xl font-bold text-base-content">Netix Liu</h1>
+                <p class="text-xl text-base-content/80 mt-4">專業技術服務顧問</p>
+                <p class="py-6 text-base-content/70">
+                    致力於為企業提供全方位的技術解決方案，協助您的事業達到新的高度。
+                    擁有豐富的產業經驗，專精於數位轉型與系統整合。
+                </p>
+                <div class="flex gap-4 justify-center">
+                    <a href="#services" class="btn btn-outline btn-lg hero-btn-outline">了解服務</a>
+                    <a href="#contact" class="btn btn-outline btn-lg hero-btn-outline">取得連繫</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-base-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-base-content mb-4">關於我</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-base-content">專業背景</h3>
+                    <p class="text-base-content/80 leading-relaxed">
+                        擁有超過10年的技術服務經驗，曾服務過多家知名企業，協助他們在數位化轉型的道路上取得成功。
+                        專精於系統整合、客製化開發、以及SAAS解決方案等領域。
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat bg-base-100 rounded-lg shadow">
+                            <div class="stat-value text-primary">10+</div>
+                            <div class="stat-desc">年專業經驗</div>
+                        </div>
+                        <div class="stat bg-base-100 rounded-lg shadow">
+                            <div class="stat-value text-primary">100+</div>
+                            <div class="stat-desc">成功案例</div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <h4 class="text-lg font-semibold text-base-content">核心專長</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <button class="expertise-btn">
+                                <i class="fas fa-digital-tachograph mr-2"></i>
+                                數位轉型
+                            </button>
+                            <button class="expertise-btn">
+                                <i class="fas fa-code mr-2"></i>
+                                系統開發
+                            </button>
+                            <button class="expertise-btn">
+                                <i class="fas fa-cloud mr-2"></i>
+                                SAAS整合
+                            </button>
+                            <button class="expertise-btn">
+                                <i class="fas fa-globe mr-2"></i>
+                                網站建置
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/office-background.jpg" alt="專業辦公環境" class="w-full h-64 object-cover" />
+                    </figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-base-content">專業理念</h3>
+                        <p class="text-base-content/80">
+                            相信每個企業都有其獨特的價值與潛力，透過專業的技術分析與規劃，
+                            協助企業發掘數位化機會、解決技術挑戰，實現永續成長的目標。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-base-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-base-content mb-4">服務項目</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-xl text-base-content/70 max-w-2xl mx-auto">
+                    提供全方位的技術服務解決方案，協助您的企業在數位化轉型中達到卓越表現
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 service-card">
+                    <div class="card-body text-center">
+                        <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-digital-tachograph text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="card-title justify-center text-base-content">數位轉型/技術整合顧問</h3>
+                        <p class="text-base-content/70">
+                            協助企業制定數位轉型策略，整合現有技術資源，導入新興技術解決方案，
+                            優化業務流程，提升營運效率與競爭力。
+                        </p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary btn-sm">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 service-card">
+                    <div class="card-body text-center">
+                        <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-code text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="card-title justify-center text-base-content">客製化系統開發</h3>
+                        <p class="text-base-content/70">
+                            根據企業特殊需求，設計並開發專屬的軟體系統，或協助串接整合既有系統，
+                            包含ERP、CRM、電商平台、EIP等各類商業應用系統。
+                        </p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary btn-sm">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 service-card">
+                    <div class="card-body text-center">
+                        <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-cloud text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="card-title justify-center text-base-content">SAAS系統代理與整合</h3>
+                        <p class="text-base-content/70">
+                            提供各類SAAS解決方案的代理服務，協助企業選擇合適的雲端服務，
+                            並進行系統整合，確保各平台間的資料流通與協作。
+                        </p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary btn-sm">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 service-card">
+                    <div class="card-body text-center">
+                        <div class="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-globe text-2xl text-primary"></i>
+                        </div>
+                        <h3 class="card-title justify-center text-base-content">網站設計建置</h3>
+                        <p class="text-base-content/70">
+                            提供專業的網站設計與開發服務，包含企業官網、電商網站、
+                            響應式網頁設計，以及SEO優化等全方位網站解決方案。
+                        </p>
+                        <div class="card-actions justify-center mt-4">
+                            <button class="btn btn-primary btn-sm">了解更多</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-base-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-base-content mb-4">取得連繫</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6"></div>
+                <p class="text-xl text-base-content/70 max-w-2xl mx-auto">
+                    準備好開始您的數位轉型之旅了嗎？歡迎透過以下方式與我們聯繫
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 text-center">
+                    <a class="contact-info-item" href="mailto:netix@netix.com.tw">
+                        <div class="mb-4">
+                            <i class="fas fa-envelope text-4xl text-primary mb-3"></i>
+                            <h3 class="text-xl font-bold text-base-content">電子郵件</h3>
+                            <p class="text-lg text-base-content/80 mt-2">netix@netix.com.tw</p>
+                        </div>
+                    </a>
+                    
+                    <a class="contact-info-item" href="tel:+886922188300">
+                        <div class="mb-4">
+                            <i class="fas fa-phone text-4xl text-primary mb-3"></i>
+                            <h3 class="text-xl font-bold text-base-content">聯絡電話</h3>
+                            <p class="text-lg text-base-content/80 mt-2">+886-922-188300</p>
+                        </div>
+                    </a>
+                    
+                    <a class="contact-info-item" href="https://www.google.com/maps?q=台北市中山區復興北路164號" target="_blank">
+                        <div class="mb-4">
+                            <i class="fas fa-map-marker-alt text-4xl text-primary mb-3"></i>
+                            <h3 class="text-xl font-bold text-base-content">辦公地址</h3>
+                            <p class="text-lg text-base-content/80 mt-2">台北市中山區復興北路164號4樓之1</p>
+                        </div>
+                    </a>
+                    
+                    <div class="contact-info-item">
+                        <div class="mb-4">
+                            <i class="fas fa-clock text-4xl text-primary mb-3"></i>
+                            <h3 class="text-xl font-bold text-base-content">營業時間</h3>
+                            <p class="text-lg text-base-content/80 mt-2">週一至週五 10:00-19:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-10 bg-base-300 text-base-content">
+        <aside>
+            <p class="font-bold text-lg">Netix Liu</p>
+            <p class="text-base-content/70">廣燁資訊顧問有限公司</p>
+            <p class="text-base-content/70">Copyright © 2025 - All rights reserved</p>
+        </aside>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-circle btn-primary fixed bottom-8 right-8 z-40 opacity-0 transition-opacity duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>
