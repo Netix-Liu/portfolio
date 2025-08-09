@@ -277,6 +277,7 @@ html {
     transition: all 0.3s ease;
     border-radius: 8px;
     padding: 0.5rem 1rem;
+    font-size: 1.1rem;
 }
 
 .nav-link::after {
@@ -416,6 +417,16 @@ html {
     .btn-lg {
         font-size: 1rem;
         padding: 0.875rem 1.75rem;
+    }
+    
+    /* Mobile navigation adjustments */
+    .navbar .btn-ghost .fas.fa-bars {
+        font-size: 1.125rem; /* Reduced from text-xl (1.25rem) to smaller size */
+    }
+    
+    .menu.menu-sm.dropdown-content .nav-link {
+        font-size: 1.1rem; /* Increased text size for better readability */
+        padding: 0.75rem 1rem; /* Slightly increased padding for better touch targets */
     }
 }
 
