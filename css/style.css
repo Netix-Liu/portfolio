@@ -428,6 +428,66 @@ html {
         font-size: 1.1rem; /* Increased text size for better readability */
         padding: 0.75rem 1rem; /* Slightly increased padding for better touch targets */
     }
+    
+    /* Mobile contact section - Convert from card-style to list-style layout */
+    /* Override grid gap for mobile contact section */
+    #contact .grid {
+        gap: 0;
+    }
+    
+    .contact-info-item {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        padding: 1rem 0.75rem;
+        border-radius: 8px;
+        margin-bottom: 0.5rem;
+        color: hsl(var(--bc)); /* Ensure text-base-content color */
+    }
+    
+    .contact-info-item .mb-4 {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    
+    .contact-info-item i {
+        font-size: 1.5rem !important; /* Reduce from text-4xl to smaller size */
+        margin-right: 1rem;
+        margin-bottom: 0 !important;
+        min-width: 2rem;
+        text-align: center;
+    }
+    
+    .contact-info-item h3 {
+        display: none;
+        margin-bottom: 0.25rem;
+        font-size: 1.125rem;
+        color: hsl(var(--bc)); /* Ensure text-base-content color */
+    }
+    
+    .contact-info-item p {
+        margin-top: 0.125rem;
+        font-size: 0.95rem;
+        color: hsl(var(--bc) / 0.8); /* Ensure text-base-content/80 color */
+    }
+    
+    .contact-info-item:hover {
+        background: rgba(37, 99, 235, 0.05);
+        transform: translateY(0);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    .contact-info-item:hover i {
+        transform: scale(1.05);
+        color: hsl(var(--p));
+    }
+    
+    /* Ensure proper text layout in mobile list style */
+    .contact-info-item .mb-4 > div:last-child {
+        flex: 1;
+    }
 }
 
 /* High contrast mode support */
