@@ -419,28 +419,28 @@ document.addEventListener('DOMContentLoaded', () => {
     ContactManager.setupContactCopy();
     
     // Initialize counter animations for stats
-    const statValues = document.querySelectorAll('.stat-value');
-    const statsObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const target = parseInt(entry.target.textContent);
-                if (!isNaN(target)) {
-                    AnimationController.animateCounter(entry.target, target);
-                }
-                statsObserver.unobserve(entry.target);
-            }
-        });
-    });
+    // const statValues = document.querySelectorAll('.stat-value');
+    // const statsObserver = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             const target = parseInt(entry.target.textContent);
+    //             if (!isNaN(target)) {
+    //                 AnimationController.animateCounter(entry.target, target);
+    //             }
+    //             statsObserver.unobserve(entry.target);
+    //         }
+    //     });
+    // });
     
-    statValues.forEach(stat => {
-        if (stat.textContent.includes('+')) {
-            const number = parseInt(stat.textContent);
-            if (!isNaN(number)) {
-                stat.textContent = '0';
-                statsObserver.observe(stat);
-            }
-        }
-    });
+    // statValues.forEach(stat => {
+    //     if (stat.textContent.includes('+')) {
+    //         const number = parseInt(stat.textContent);
+    //         if (!isNaN(number)) {
+    //             stat.textContent = '0';
+    //             statsObserver.observe(stat);
+    //         }
+    //     }
+    // });
 });
 
 // Handle page visibility changes
